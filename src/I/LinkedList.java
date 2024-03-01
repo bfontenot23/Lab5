@@ -1,13 +1,13 @@
 package I;
 
-public class LinkedList<Object> extends java.util.LinkedList<Object> {
+public class LinkedList<T> extends java.util.LinkedList<T> {
 
     public LinkedList()
     {
         super();
     }
 
-    public void insert(Object e)
+    public void insert(T e)
     {
         this.add(e);
     }
