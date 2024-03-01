@@ -17,7 +17,7 @@ public class LinkedList<T> extends java.util.LinkedList<T> {
         System.out.println("----- begins ----");
         for(int i = 0;i<this.size();i++)
         {
-            System.out.println("Position:" + i + " Data:" + this.get(i));
+            System.out.println("Position:" + (i+1) + " Data:" + this.get(i));
         }
         System.out.println("----- ends ----\n");
     }
