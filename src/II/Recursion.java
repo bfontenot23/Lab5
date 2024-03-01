@@ -7,16 +7,12 @@ public class Recursion {
     public static int recursiveBinarySearch(ArrayList<Integer> inList, int target)
     {
         int min = 0, max = inList.size()-1, mid;
-        boolean searching = true;
-
         do {
             mid = (min+max)/2;
             if(inList.get(mid)==target) return mid;
-            else if(inList.get(mid)>target) max = mid;
-            else if(inList.get(mid)<target) min = mid;
-
-            if(min == max) searching = false;
-        } while(searching);
+            else if(inList.get(mid)>target) max = mid-1;
+            else if(inList.get(mid)<target) min = mid+1;
+        } while(min<=max);
 
         return -1;
     }
